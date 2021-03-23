@@ -1,0 +1,135 @@
+.like {
+    cursor: pointer;
+    display: flex;
+    justify-content:center;
+}
+
+
+.like [type="checkbox"] {
+    display: none;
+    
+}
+
+.touch {
+    font-size: 80px;
+    color: #e4e4e4; 
+    user-select: none;
+}
+
+.like [type="checkbox"]:checked ~ .touch {
+    animation-name: touch;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes touch {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+      color: rgb(192, 184, 184);
+    }
+  }
+
+
+
+.image {
+    width: 320px;
+    height: 160px;
+    cursor: pointer;
+    user-select: none;
+    /* transform-origin: top lihgt;  */
+}
+
+body {
+    color: #333;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+}
+
+li {
+    list-style: none;
+}
+
+.circle1 {
+    transform: scale(-1,1);
+    transition-duration: 1s;
+    user-select: none;
+} 
+
+.circle2 {
+    transform: scale(1,-1);
+    transition-duration: 2s;
+    user-select: none;
+    
+    }
+
+.circle3 {
+    transform: translateX(100px);
+    transition-duration: 1s;
+    transform: rotate(-180deg);
+    user-select: none;
+}
+
+.message {
+    width: 300px;
+    padding: 8px 16px;
+    background: #3552a1;
+    color: rgb(250, 243, 243);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+  
+    animation: popup 2s forwards;
+  }
+  
+  @keyframes popup {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+      animation-timing-function: ease-out;
+    }
+    20%, 80% {
+      transform: none;
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(20px);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    
+  }
+
+
+
+
+
+body {
+    color: #333;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+body .h3 {
+    color: #333;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 60px;
+    color: gray;
+  }

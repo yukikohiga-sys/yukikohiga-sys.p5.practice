@@ -5,10 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>p5js.practice</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/p5.min.js" integrity="sha512-tGZFF1kxT/c9C+kv77mKkZ9Ww1VyU8TMX6HLUSzbPrDLuptbiRFBfti8A33ip+BBIHYUsybuZD9OKLmIqdLmaQ==" crossorigin="anonymous"></script>
+    
+    <h2>ゆきにゃあ只今プログラミング勉強中</h2>
+    <h3>バッハとプログラミングは絶対関係ある！<br>と思いついたのはいいんだけど・・・どうすればいいの？うーんとりあえず<br>javascrirtを勉強するのにゃ</h3>
+
+    <img src="img/score.img1.jpg" width="200" height="140" alt="楽譜イメージ画像です">
+    <p>こちらの「謎のカノン」と呼ばれる楽譜を「クリックしたら動く」というのを<br>試みてみました。
+    なので、お気軽にクリックしていただけたらと思います。</p>
+
+    <div class="image" id="target1">
+      <img src="img/score.a-thumbnail2.gif"alt="楽譜イメージ画像です">
+      <li>左右反転、蟹行カノンと呼ばれるもの</li>
+    </div>
+    
+    <div class="image" id="target2">
+      <img src="img/score.a-thumbnail2.gif"alt="楽譜イメージ画像です">
+      <li>上下反転、反行カノンと呼ばれるもの</li>
+    </div>
+    
+    <div class="image" id="target3">
+      <img src="img/score.a-thumbnail2.gif"alt="楽譜イメージ画像です">
+      <li>180度回転したもの</li>
+    </div>
+
+    
+    <img src="img/score.a.2-thumbnail2.gif" alt="楽譜イメージ画像です">
+    <p>音を聞いてみる場合はこちら↓の再生ボタンを押してみてください。</p>
+    <audio id="audio" preload="auto">
+      <source src="img/canon14.1.mp3" type="audio/mp3">
+     <p>※ご利用のブラウザでは再生することができません。</p>
+   </audio>
+   <input type="button" onclick="audioPlay()" value="再生">
+   <input type="button" onclick="audioPause()" value="停止"> 
+   <script src="myscript.js"></script>
+
+
+        
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/p5.min.js" integrity="sha512-tGZFF1kxT/c9C+kv77mKkZ9Ww1VyU8TMX6HLUSzbPrDLuptbiRFBfti8A33ip+BBIHYUsybuZD9OKLmIqdLmaQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
-    <script src="myscript.js"></script>
+    <script src="myscript.js"></script> -->
+
+
+
+    
+      <footer>
+        <a href="https://yukikohiga-sys.github.io/yukikohiga-sys.my-site/"><p> yuki_nyaのトップページに戻る</p></a>
+        </footer>
 </body>
 </html>
