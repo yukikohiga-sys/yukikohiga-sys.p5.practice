@@ -3,20 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>おみくじ</title>
+  <title>たしざん</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+ 
+    <select id="sel1">
+      <option value="red"></option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="E">E</option>
+      <option value="F">F</option>
+      <option value="G">G</option>
+      <option value="H">H</option>
+    </select>
+    <button>Add</button>
+  
+    <ul>
+    </ul>
+    
+    <input type="button" value=" ボタン " onclick="setNonSelect('sel1');">
+  
+  <input type="number" id="num1"> +
+  <input type="number" id="num2"> +
+  <input type="number" id="num3"> +
+  <input type="number" id="num4"> =
+  <span class="result">結果</span>
+  <br>
+  <button class="button" type="button" onclick="onClick();">足算します</button>  
+
   <!-- <div id="btn">?</div> -->
   
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script>
   
-<!-- 文字を数字に当てはめてみる -->
-<p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="LYyqXxy" data-user="yukikohiga-sys" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/yukikohiga-sys/pen/LYyqXxy">
-  </a> by yukikohiga-sys (<a href="https://codepen.io/yukikohiga-sys">@yukikohiga-sys</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 </body>
 </html>
