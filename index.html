@@ -1,50 +1,180 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>たしざん</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svgれんしゅう</title>
+    <link rel ="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="contents">
+    <div class="svg-wrapper">
+   <svg width="660" height="660" viewBox="0 0 660 660">
 
- 
-    <select id="sel1">
-      <option value="red"></option>
-      <option value="A">A</option>
-      <option value="B">B</option>
-      <option value="C">C</option>
-      <option value="D">D</option>
-      <option value="E">E</option>
-      <option value="F">F</option>
-      <option value="G">G</option>
-      <option value="H">H</option>
-    </select>
-    <button>Add</button>
-  
-    <ul>
-    </ul>
+     
+     <g class="gold-button">
+       <circle cx="330" cy="260" r="120" fill="gold"/>
+       <text x="260" y="320"class="gold-text">C</text>
+     </g>
+     
+    <g class="orange-button" id="target3">
+      <circle cx="360" cy="320" r="60" fill="orange"/>
+      <text x="340" y="340"class="orange-text">8</text>
+    </g>
     
-    <input type="button" value=" ボタン " onclick="setNonSelect('sel1');">
-  
-  <input type="number" id="num1"> +
-  <input type="number" id="num2"> +
-  <input type="number" id="num3"> +
-  <input type="number" id="num4"> =
-  <span class="result">結果</span>
-  <br>
-  <button class="button" type="button" onclick="onClick();">足算します</button>  
+    <g class="transparent-button">
+     
+      <text x="150" y="200"class="transparent-text">BA</text>
+    </g>
+    
+    <g class="pink-button"id="target2" >
+       <circle cx="180" cy="180" r="40" fill="pink"/>
+       <text x="160" y="200"class="pink-text">1</text>
+    </g>
+   
+    
+    <g class="skyblue-button" id="target1">
+       <circle cx="180" cy="180" r="40" fill="skyblue"/>
+       <text x="160" y="200"class="skyblue-text"id="text1">B</text>
+    </g>
+   
+   </svg>
 
-  <!-- <div id="btn">?</div> -->
-  <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="gOWyJgb" data-user="yukikohiga-sys" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-    <span>See the Pen <a href="https://codepen.io/yukikohiga-sys/pen/gOWyJgb">
-    </a> by yukikohiga-sys (<a href="https://codepen.io/yukikohiga-sys">@yukikohiga-sys</a>)
-    on <a href="https://codepen.io">CodePen</a>.</span>
-  </p>
-  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-  <script src="js/main.js"></script>
-  
-  
+<svg>
+    <defs>
+    <pattern id="myPattern"
+             x="10" y="10" width="20" height="20" patternUnits="userSpaceOnUse" >
+  <!-- start pattern-->
+        <circle cx="10" cy="10" r="4" style="stroke: none; fill: magenta" />
+  <!-- end pattern -->
+    </pattern>
+  </defs> 
+  <g>
+    <circle cx="70" cy="70" r="50" fill="red"/>
+    <circle cx="70" cy="70" r="50" style="stroke:none; fill: url(#myPattern);" />
+ </g>
+</svg>
 
+<svg>
+  <defs>
+      <pattern id="hatching1" x="0" y="0" width="4" height="4" patternTransform="rotate(-45)" patternUnits="userSpaceOnUse" viewBox="0 0 10 10">
+          <rect width="10" height="5" fill="blue"/>
+      </pattern>
+      <pattern id="hatching2" x="0" y="0" width="30" height="30"patternUnits="userSpaceOnUse" viewBox="0 0 10 10">
+          <rect x="0" y="0" width="20" height="20" fill="green"/>
+          <rect width="10" height="5" fill="blue"/>
+      </pattern>
+  </defs>
+  <g>
+      <rect fill="url(#hatching1)" x="0" y="300" width="200" height="100" rx="20" ry="20"/>
+      <rect fill="url(#hatching2)" x="0" y="410" width="200" height="100" rx="20" ry="20"/>
+  </g>
+</svg>
+
+<!-- 草っぽいパターン -->
+<svg>
+  <defs>
+      <pattern id="grass" x="0" y="0" width="5" height="12" patternUnits="userSpaceOnUse" viewBox="0 0 10 10">
+          <rect width="2" height="20" fill="lime"/>
+      </pattern>
+  </defs>
+    <g>
+      <rect fill="#fff" x="460" y="300" width="200"         height="100" rx="20" ry="20"/>
+      <rect fill="url(#grass)" x="460" y="300" width="200" height="100" rx="20" ry="20"/>
+    </g>
+</svg>
+
+<!-- チェック柄 -->
+<svg>
+  <defs>
+      <pattern id="plaid2" x="0" y="0" width="5" height="20" patternTransform="rotate(-90)" patternUnits="userSpaceOnUse" viewBox="0 0 10 10">
+          <rect width="10" height="5" fill="#ffff99"/>
+      </pattern>
+      <pattern id="plaid3" x="0" y="0" width="3" height="20"patternUnits="userSpaceOnUse" viewBox="0 0 10 10">
+          <rect width="10" height="5" fill="#ffff99"/>
+      </pattern>
+  </defs>
+     <g>
+       <circle cx="460" cy="410" r="80" fill="gold"/>
+      <circle cx="460" cy="410" r="80" fill="url(#plaid2)"/>
+      <circle cx="460" cy="410" r="80" fill="url(#plaid3)"/>
+      <text x="440" y="430"class="orange-text">H</text>
+    </g>  
+
+    <!-- <g>
+      ーーー下それぞれのストライプ柄の背景色ーーー
+      <circle cx="460" cy="410" r="80" fill="gold"/>
+      ーーー縦ストライプーーー
+      <rect fill="url(#plaid2)" x="460" y="410" width="200" height="100" rx="20" ry="20"/>
+      ーーー横ストライプーーー
+      <rect fill="url(#plaid3)" x="460" y="410" width="200" height="100" rx="20" ry="20"/>
+    </g> -->
+</svg>
+
+
+<!-- strokeをストライプ柄のパターンにする -->
+<svg>
+  <defs>
+    <pattern id="hatching3" x="0" y="0" width="4" height="4" patternTransform="rotate(-45)" patternUnits="userSpaceOnUse" viewBox="0 0 10 10">
+      <rect width="10" height="5" fill="blue"/>
+   </pattern>
+  </defs>
+    <g>
+      <rect fill="none" stroke ="url(#hatching3)" stroke-width ="10" x="460" y="10" width="200" height="100" rx="20" ry="20" />
+    </g>
+</svg>
+
+
+<svg>
+  <defs>
+      <pattern id="hatching3" x="0" y="0" width="4" height="4" patternTransform="rotate(-45)" patternUnits="userSpaceOnUse" viewBox="0 0 10 10">
+          <rect width="10" height="5" fill="blue"/>
+      </pattern>
+      <pattern id="hatching4" x="0" y="0" width="30" height="30"patternUnits="userSpaceOnUse" viewBox="0 0 10 10">
+          <rect x="0" y="0" width="20" height="20" fill="green"/>
+          <rect width="5" height="10" fill="blue"/>
+      </pattern>
+  </defs>
+  <g>
+      <rect fill="url(#hatching3)" x="200" y="400" width="200" height="100" rx="20" ry="20"/>
+      <rect fill="url(#hatching4)" x="200" y="510" width="200" height="100" rx="20" ry="20"/>
+  </g>
+</svg>
+
+
+
+  
+   </div>
+</div>
+
+   <script>
+     ['target1', 'target2', 'target3'].forEach((target) => {
+  document.getElementById(target).addEventListener('click', function() {
+
+    this.classList.toggle('moved');
+  });
+});
+
+     document.getElementById('target1').addEventListener('click', function update() {
+         document.getElementById('text1').textContent = '2';
+         
+         
+  });
+
+   
+ 
+
+
+    // (function() {
+    //   'use strict';
+
+    //   document.getElementById('target1').addEventListener('click', function() {
+    //     this.setAttribute('pink-text', 'pink-button moved');
+    //     this.classList.toggle('moved1');
+    //   });
+    // })();
+   
+  </script>
 </body>
 </html>
